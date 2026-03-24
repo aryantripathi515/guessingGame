@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="img" src="number_back.jpg" >
+    <div class="wrapper">
+        <h1>Number Guessing Game</h1>
+        <p>Try and Guess a random Number between 1 to 100.</p>
+        <p>You have 10 attempts to Guess the right number.</p>
+        <br>
+            <form class="form">
+                <label for="guessfeild" id="guess" >Guess a number</label>
+                <input type="text" id="guessfeild" class="guessfeild">
+                <input type="submit" id="subt" value="submit guess" class="guessSubmit">
+            </form>
+
+            <div class="resultParas">
+                <p>Previous Guesses:<span class="guesses"></span></p>
+                <br>
+                <p>Guesses Remaining:<span class="LastResult">10</span></p>
+                <p class="lowOrHi"></p>
+            </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+</html>
